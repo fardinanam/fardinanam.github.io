@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/fardinanam.github.io/static/css/main.6f746992.chunk.css",
+    "main.js": "/fardinanam.github.io/static/js/main.ae32f05c.chunk.js",
+    "main.js.map": "/fardinanam.github.io/static/js/main.ae32f05c.chunk.js.map",
+    "runtime-main.js": "/fardinanam.github.io/static/js/runtime-main.a6eb1298.js",
+    "runtime-main.js.map": "/fardinanam.github.io/static/js/runtime-main.a6eb1298.js.map",
+    "static/js/2.bcd15a92.chunk.js": "/fardinanam.github.io/static/js/2.bcd15a92.chunk.js",
+    "static/js/2.bcd15a92.chunk.js.map": "/fardinanam.github.io/static/js/2.bcd15a92.chunk.js.map",
+    "index.html": "/fardinanam.github.io/index.html",
+    "static/css/main.6f746992.chunk.css.map": "/fardinanam.github.io/static/css/main.6f746992.chunk.css.map",
+    "static/js/2.bcd15a92.chunk.js.LICENSE.txt": "/fardinanam.github.io/static/js/2.bcd15a92.chunk.js.LICENSE.txt",
+    "static/media/profilePic.c957dcc4.png": "/fardinanam.github.io/static/media/profilePic.c957dcc4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6eb1298.js",
+    "static/js/2.bcd15a92.chunk.js",
+    "static/css/main.6f746992.chunk.css",
+    "static/js/main.ae32f05c.chunk.js"
+  ]
+}
