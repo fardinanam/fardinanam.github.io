@@ -109,3 +109,15 @@ export const skillsData = [
   "Adobe Illustrator",
   "Arduino"
 ] as const;
+
+export const socialsData = {
+  "github": {
+    url: "https://github.com/fardinanam"
+  },
+  "linkedin":{
+    url: "https://www.linkedin.com/in/fardin-anam-aungon-3b754713b/"
+  },
+  "email": {
+    address: "fardinanam@gmail.com",
+  },
+} as const;
