@@ -1,25 +1,25 @@
 const validateString = (value: unknown, maxLength: number): value is string => {
   if (!value || typeof value !== "string" || value.length > maxLength) {
-    return false
+    return false;
   }
 
-  return true
-}
+  return true;
+};
 
 const getErrorMessage = (error: unknown): string => {
-  let message: string
+  let message: string;
 
   if (error instanceof Error) {
-    message = error.message
-  } else if (error && typeof error === 'object' && 'message' in error) {
-    message = String(error.message)
-  } else if (error && typeof error === 'string') {
-    message = error
+    message = error.message;
+  } else if (error && typeof error === "object" && "message" in error) {
+    message = String(error.message);
+  } else if (error && typeof error === "string") {
+    message = error;
   } else {
-    message = 'Something went wrong.'
+    message = "Something went wrong.";
   }
 
-  return message
-}
+  return message;
+};
 
-export { validateString, getErrorMessage }
+export { validateString, getErrorMessage };

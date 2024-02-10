@@ -107,17 +107,17 @@ export const skillsData = [
   "Git",
   "LaTeX",
   "Adobe Illustrator",
-  "Arduino"
+  "Arduino",
 ] as const;
 
 export const socialsData = {
-  "github": {
-    url: "https://github.com/fardinanam"
+  github: {
+    url: "https://github.com/fardinanam",
   },
-  "linkedin":{
-    url: "https://www.linkedin.com/in/fardin-anam-aungon-3b754713b/"
+  linkedin: {
+    url: "https://www.linkedin.com/in/fardin-anam-aungon-3b754713b/",
   },
-  "email": {
+  email: {
     address: "fardinanam@gmail.com",
   },
 } as const;
