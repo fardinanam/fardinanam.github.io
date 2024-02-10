@@ -2,9 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import syncincImg from "@/public/syncinc.png";
+import syncincImgDark from "@/public/syncinc-dark.png";
+import rentastay from "@/public/rentastay.png";
 
 export const links = [
   {
@@ -62,25 +64,24 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "SyncInc.",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A web app to manage and track projects and tasks of an organization.",
+    tags: ["React", "django", "PostgreSQL", "Material UI", "Firebase"],
+    imageUrl: syncincImg,
+    imageUrlDark: syncincImgDark,
+    githubUrl: "https://github.com/fardinanam/SyncInc",
+    websiteUrl: "https://syncinc.vercel.app/",
   },
   {
-    title: "rmtDev",
+    title: "RentaStay",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "An oracle powered bootstrapped Django website inspired by Airbnb.",
+    tags: ["django", "JavaScript", "Bootstrap", "Oracle DB", "JQuery"],
+    imageUrl: rentastay,
+    imageUrlDark: null,
+    githubUrl: "https://github.com/fardinanam/RentaStay",
+    websiteUrl: "",
   },
 ] as const;
 

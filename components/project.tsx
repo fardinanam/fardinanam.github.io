@@ -4,11 +4,24 @@ import Image from "next/image";
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { FaGithub, FaGithubSquare } from "react-icons/fa";
+import { GoLinkExternal } from "react-icons/go";
+import { HiOutlineExternalLink } from "react-icons/hi";
+import { useTheme } from "@/lib/hooks";
 
 type ProjectProps = (typeof projectsData)[number];
 
-function Project({ title, description, tags, imageUrl }: ProjectProps) {
+function Project({
+  title,
+  description,
+  tags,
+  imageUrl,
+  imageUrlDark,
+  githubUrl,
+  websiteUrl,
+}: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const { theme } = useTheme();
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -33,6 +46,22 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
           <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>
             {description}
           </p>
+          <ul className='flex mt-3 mb-3 gap-2'>
+            {githubUrl && (
+              <li>
+                <a href={githubUrl} target='_blank'>
+                  <FaGithubSquare className='size-6 focus:scale-[1.5] hover:scale-[1.15] ' />
+                </a>
+              </li>
+            )}
+            {websiteUrl && (
+              <li>
+                <a href={websiteUrl} target='_blank'>
+                  <HiOutlineExternalLink className='size-6 focus:scale-[1.5] hover:scale-[1.15] ' />
+                </a>
+              </li>
+            )}
+          </ul>
           <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
             {tags.map((tag, index) => (
               <li
@@ -45,10 +74,12 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
           </ul>
         </div>
         <Image
-          src={imageUrl}
+          src={
+            theme === "dark" && imageUrlDark !== null ? imageUrlDark : imageUrl
+          }
           alt={title}
           quality={95}
-          className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl
           transition 
           group-hover:scale-[1.04]
           group-hover:-translate-x-3
