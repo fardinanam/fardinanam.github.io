@@ -1,7 +1,6 @@
 "use client";
 
 import Header from "@/components/header";
-// import { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/activeSectionContext";
@@ -21,7 +20,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { theme } = useTheme();
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, (value) => (value < 4000 ? value : 4000));
   const scale = useTransform(scrollY, (value) =>
