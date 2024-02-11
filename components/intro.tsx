@@ -8,7 +8,7 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
-import { socialsData } from "@/lib/data";
+import { hobbies, socialsData } from "@/lib/data";
 import { useActiveSectionContext } from "@/context/activeSectionContext";
 import { TypeAnimation } from "react-type-animation";
 
@@ -17,6 +17,10 @@ function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 0.1], [2, 0.1]);
+  const hobbyList: (string | number)[] = [];
+  for (const hobby of hobbies) {
+    hobbyList.push(hobby, 1000);
+  }
 
   return (
     <section
@@ -67,16 +71,10 @@ function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         Hello, I'm<span className='font-bold'> Fardin Anam Aungon.</span> I'm a{" "}
-        final year student of{" "}
-        <span className='font-bold'>Computer Science And Engineering </span> at{" "}
-        <a
-          href='https://www.buet.ac.bd/'
-          className='underline italic'
-          target='_blank'
-        >
-          BUET
-        </a>{" "}
-        and also a<span className='font-bold'> Software Engineer</span> at{" "}
+        final year
+        <span className='font-bold'> Computer Science And Engineering </span>
+        student and also a<span className='font-bold'> Software Engineer</span>{" "}
+        at{" "}
         <a
           href='https://pridesys.com/'
           className='underline italic'
@@ -89,18 +87,7 @@ function Intro() {
         <TypeAnimation
           cursor
           style={{ fontWeight: "bold" }}
-          sequence={[
-            " coding.",
-            1000,
-            " problem solving.",
-            1000,
-            " learning new things.",
-            1000,
-            " building softwares.",
-            1000,
-            " playing video games.",
-            1000,
-          ]}
+          sequence={hobbyList}
           wrapper='span'
           speed={50}
           repeat={Infinity}

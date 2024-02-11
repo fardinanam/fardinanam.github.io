@@ -4,9 +4,7 @@ import Image from "next/image";
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { FaGithub, FaGithubSquare } from "react-icons/fa";
-import { GoLinkExternal } from "react-icons/go";
-import { HiOutlineExternalLink } from "react-icons/hi";
+import { FaGithub, FaGithubSquare, FaLink } from "react-icons/fa";
 import { useTheme } from "@/lib/hooks";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -40,7 +38,7 @@ function Project({
       }}
       className='group mb-3 sm:mb-8 last:mb-0'
     >
-      <article className='bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white'>
+      <article className='bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:border-white/5 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white'>
         <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]'>
           <h2 className='text-2xl font-semibold'>{title}</h2>
           <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>
@@ -50,14 +48,14 @@ function Project({
             {githubUrl && (
               <li>
                 <a href={githubUrl} target='_blank'>
-                  <FaGithubSquare className='size-6 focus:scale-[1.5] hover:scale-[1.15] ' />
+                  <FaGithub className='size-6 focus:scale-[1.5] hover:scale-[1.15] ' />
                 </a>
               </li>
             )}
             {websiteUrl && (
               <li>
                 <a href={websiteUrl} target='_blank'>
-                  <HiOutlineExternalLink className='size-6 focus:scale-[1.5] hover:scale-[1.15] ' />
+                  <FaLink className='size-6 focus:scale-[1.5] hover:scale-[1.15] ' />
                 </a>
               </li>
             )}
@@ -79,7 +77,7 @@ function Project({
           }
           alt={title}
           quality={95}
-          className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl
+          className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl dark:shadow-white/40
           transition 
           group-hover:scale-[1.04]
           group-hover:-translate-x-3

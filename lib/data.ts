@@ -2,11 +2,14 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import laserSecurityImg from "@/public/laser-security-system.jpg";
+import raytracingImg from "@/public/ray-tracing.bmp";
 import syncincImg from "@/public/syncinc.png";
 import syncincImgDark from "@/public/syncinc-dark.png";
-import rentastay from "@/public/rentastay.png";
+import rentastayImg from "@/public/rentastay.png";
+import compilerImgDark from "@/public/compiler-dark.png";
+import compilerImg from "@/public/compiler.png";
+import { MdAssistant } from "react-icons/md";
 
 export const links = [
   {
@@ -37,28 +40,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Undergraduate Student, BUET",
+    location: "Dhaka, Bangladesh",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I'm a final year student in Computer Science and Engineering at BUET.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2019-present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Research Assistant, IWFM, BUET",
+    location: "Dhaka, Bangladesh",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I'm working as a research assistant on a project to develop a web-based early warning system for river erosion.",
+    icon: React.createElement(MdAssistant),
+    date: "2022-present",
+  },
+  {
+    title: "Intern, Pubali Bank Ltd.",
+    location: "Dhaka, Bangladesh",
+    description:
+      "Participated in a 1 month internship program at Pubali Bank Ltd. and worked on a project to develop a module of their banking app.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Junior Software Engineer, Pridesys IT Ltd.",
+    location: "Dhaka, Bangladesh",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Working as a junior software engineer on a project to develop a cloud based ERP system.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - present",
   },
 ] as const;
 
@@ -74,11 +85,43 @@ export const projectsData = [
     websiteUrl: "https://syncinc.vercel.app/",
   },
   {
+    title: "Ray Tracing",
+    description:
+      "A ray tracing program that renders a 3D scene with realistic lighting.",
+    tags: ["C++", "OpenGL", "Computer Graphics"],
+    imageUrl: raytracingImg,
+    imageUrlDark: null,
+    githubUrl:
+      "https://github.com/fardinanam/CSE410-Computer-Graphics/tree/master",
+    websiteUrl: "",
+  },
+  {
+    title: "A C Compiler",
+    description:
+      "A subset C compiler that analyzes and compiles C code to optimized assembly 8086 code.",
+    tags: ["C", "Flex", "Bison", "Assembly", "C++"],
+    imageUrl: compilerImg,
+    imageUrlDark: compilerImgDark,
+    githubUrl: "https://github.com/fardinanam/A-C-Compiler",
+    websiteUrl: "",
+  },
+  {
+    title: "Laser Security System",
+    description:
+      "A laser security system that detects intruders and sends an alert with a message.",
+    tags: ["Arduino", "C++"],
+    imageUrl: laserSecurityImg,
+    imageUrlDark: null,
+    githubUrl:
+      "https://github.com/fardinanam/Laser-Security-System-With-Arduino",
+    websiteUrl: "",
+  },
+  {
     title: "RentaStay",
     description:
-      "An oracle powered bootstrapped Django website inspired by Airbnb.",
+      "A web app to rent and manage houses and apartments inspired by Airbnb.",
     tags: ["django", "JavaScript", "Bootstrap", "Oracle DB", "JQuery"],
-    imageUrl: rentastay,
+    imageUrl: rentastayImg,
     imageUrlDark: null,
     githubUrl: "https://github.com/fardinanam/RentaStay",
     websiteUrl: "",
@@ -122,3 +165,12 @@ export const socialsData = {
     address: "fardinanam@gmail.com",
   },
 } as const;
+
+export const hobbies = [
+  "travelling.",
+  "coding.",
+  "problem solving.",
+  "learning new things.",
+  "building softwares.",
+  "playing video games.",
+] as const;
