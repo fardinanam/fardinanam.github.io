@@ -10,6 +10,7 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useTheme } from "@/lib/hooks";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const { theme } = useTheme();
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, (value) => (value < 4000 ? value : 4000));
   const scale = useTransform(scrollY, (value) =>
