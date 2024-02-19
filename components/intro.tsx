@@ -15,8 +15,6 @@ import { TypeAnimation } from "react-type-animation";
 function Intro() {
   const { ref } = useSectionInView("Home");
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 0.1], [2, 0.1]);
   const hobbyList: (string | number)[] = [];
   for (const hobby of hobbies) {
     hobbyList.push(hobby, 1000);
