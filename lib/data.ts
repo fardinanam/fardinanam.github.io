@@ -64,10 +64,10 @@ export const experiencesData = [
     date: "2023",
   },
   {
-    title: "Junior Software Engineer, Pridesys IT Ltd.",
+    title: "Software Engineer II, Pridesys IT Ltd.",
     location: "Dhaka, Bangladesh",
     description:
-      "Working as a junior software engineer on a project to develop a cloud based ERP system.",
+      "Working as a software engineer II on a project to develop a cloud based ERP system.",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
   },
@@ -148,6 +148,8 @@ export const skillsData = [
   "Spring Boot",
   "Bootstrap",
   "Tailwindcss",
+  "Docker",
+  "Kubernetes",
   "Git",
   "LaTeX",
   "Adobe Illustrator",
