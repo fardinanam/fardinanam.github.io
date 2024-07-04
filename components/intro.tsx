@@ -63,24 +63,23 @@ function Intro() {
         </div>
       </div>
 
-      <motion.h1
+      <motion.p
         className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, I'm<span className='font-bold'> Fardin Anam Aungon.</span> I'm a{" "}
-        final year
-        <span className='font-bold'> Computer Science And Engineering </span>
-        student and also a<span className='font-bold'> Software Engineer</span>{" "}
-        at{" "}
+        Hello, I'm<span className='font-bold'> Fardin Anam Aungon.</span> I'm a
+        <span className='font-bold'> Software Engineer</span> at{" "}
         <a
           href='https://pridesys.com/'
           className='underline italic'
           target='_blank'
         >
-          Pridesys IT
-        </a>
-        . I enjoy
+          Pridesys IT Ltd.
+        </a>{" "}
+        and I have just completed my B.Sc. in
+        <span className='font-bold'> Computer Science And Engineering </span>. 
+        I enjoy
         <br />
         <TypeAnimation
           cursor
@@ -90,7 +89,7 @@ function Intro() {
           speed={50}
           repeat={Infinity}
         />
-      </motion.h1>
+      </motion.p>
 
       <motion.div
         className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'

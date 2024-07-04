@@ -9,7 +9,7 @@ import Skills from "@/components/skills";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Fardin Anam Aungon | Personal Portfolio",
+  title: "Fardin Anam Aungon | Portfolio",
   description:
     "Fardin Anam Aungon is just going to finish his CS degree and started a junior software engineering journey.",
 };

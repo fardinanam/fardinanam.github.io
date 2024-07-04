@@ -40,12 +40,13 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Undergraduate Student, BUET",
+    title: "Software Engineer II, Pridesys IT Ltd.",
     location: "Dhaka, Bangladesh",
     description:
-      "I'm a final year student in Computer Science and Engineering at BUET.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019-present",
+      "Working as a software engineer II on a project to develop a cloud based ERP system.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - present",
+    others: {}
   },
   {
     title: "Research Assistant, IWFM, BUET",
@@ -54,6 +55,18 @@ export const experiencesData = [
       "I'm working as a research assistant on a project to develop a web-based early warning system for river erosion.",
     icon: React.createElement(MdAssistant),
     date: "2022-present",
+    others: {}
+  },
+  {
+    title: "B.Sc. in CSE, BUET",
+    location: "Dhaka, Bangladesh",
+    description:
+      "Completed my BSc. in Computer Science and Engineering from Bangladesh University of Engineering and Technology.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019-2024",
+    others: {
+      CGPA: "3.92/4.00",
+    }
   },
   {
     title: "Intern, Pubali Bank Ltd.",
@@ -62,14 +75,7 @@ export const experiencesData = [
       "Participated in a 1 month internship program at Pubali Bank Ltd. and worked on a project to develop a module of their banking app.",
     icon: React.createElement(CgWorkAlt),
     date: "2023",
-  },
-  {
-    title: "Software Engineer II, Pridesys IT Ltd.",
-    location: "Dhaka, Bangladesh",
-    description:
-      "Working as a software engineer II on a project to develop a cloud based ERP system.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2023 - present",
+    others: {}
   },
 ] as const;
 

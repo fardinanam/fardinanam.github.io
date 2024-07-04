@@ -50,6 +50,17 @@ export default function Experience() {
               <p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
                 {item.description}
               </p>
+              {
+                Object.keys(item.others).length > 0 && (
+                  <ul className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
+                    {Object.entries(item.others).map(([key, value]) => (
+                      <li key={key}>
+                        <span className='font-semibold'>{key}:</span> {value}
+                      </li>
+                    ))}
+                  </ul>
+                )
+              }
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
