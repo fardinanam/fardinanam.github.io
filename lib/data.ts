@@ -54,7 +54,7 @@ export const experiencesData = [
     description:
       "I'm working as a research assistant on a project to develop a web-based early warning system for river erosion.",
     icon: React.createElement(MdAssistant),
-    date: "2022-present",
+    date: "2022-2024",
     others: {}
   },
   {
