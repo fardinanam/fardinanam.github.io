@@ -1,6 +1,5 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import laserSecurityImg from "@/public/laser-security-system.jpg";
 import raytracingImg from "@/public/ray-tracing.bmp";
@@ -9,6 +8,7 @@ import syncincImgDark from "@/public/syncinc-dark.png";
 import rentastayImg from "@/public/rentastay.png";
 import compilerImgDark from "@/public/compiler-dark.png";
 import compilerImg from "@/public/compiler.png";
+import huhImg from "@/public/huh.png";
 import { MdAssistant } from "react-icons/md";
 
 export const links = [
@@ -131,6 +131,16 @@ export const projectsData = [
     imageUrlDark: null,
     githubUrl: "https://github.com/fardinanam/RentaStay",
     websiteUrl: "",
+  },
+  {
+    title: "Huh!",
+    description:
+      "A platformer game where the player has to reach the end of the level by jumping over obstacles.",
+    tags: ["Unity", "C#", "Game Development", "GameJam"],
+    imageUrl: huhImg,
+    imageUrlDark: null,
+    githubUrl: "https://github.com/Shamit187/IEEECSGameJam2023",
+    websiteUrl: "https://shamit187.itch.io/huh",
   },
 ] as const;
 
