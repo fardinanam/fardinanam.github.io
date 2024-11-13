@@ -9,6 +9,7 @@ import rentastayImg from "@/public/rentastay.png";
 import compilerImgDark from "@/public/compiler-dark.png";
 import compilerImg from "@/public/compiler.png";
 import huhImg from "@/public/huh.png";
+import mineSweeper from "@/public/minesweeper.png";
 import { MdAssistant } from "react-icons/md";
 
 export const links = [
@@ -133,6 +134,16 @@ export const projectsData = [
     websiteUrl: "",
   },
   {
+    title: "Minesweeper AI",
+    description:
+      "An AI that plays Minesweeper using a combination of inference and probability.",
+    tags: ["Python", "AI", "Knowledge Base", "Inference", "Probability"],
+    imageUrl: mineSweeper,
+    imageUrlDark: null,
+    githubUrl: "https://github.com/fardinanam/CSE318-AI-Sessional/tree/master/Offline%204%20(Minesweeper)",
+    websiteUrl: "",
+  },
+  {
     title: "Huh!",
     description:
       "A platformer game where the player has to reach the end of the level by jumping over obstacles.",
@@ -166,6 +177,7 @@ export const skillsData = [
   "Tailwindcss",
   "Docker",
   "Kubernetes",
+  "Helm",
   "Git",
   "LaTeX",
   "Adobe Illustrator",
