@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: title,
     description: description,
     type: "website",
-    images: '/profile-pic.jpeg',
+    images: '/icon.jpg',
   },
 };
 
