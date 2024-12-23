@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/profile-pic.jpeg",
+        url: "https://fardinanam.vercel.app/profile-pic.jpeg",
         alt: "Fardin Anam Aungon's Profile Picture",
       },
     ],
