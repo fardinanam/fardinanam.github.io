@@ -8,12 +8,26 @@ import Skills from "@/components/skills";
 
 import { Metadata } from "next";
 
+const title = "Fardin Anam Aungon | Portfolio";
+const description = "Fardin Anam Aungon is a Software Engineer II at Pridesys IT Ltd. He is a Full Stack Developer with a passion for building beautiful and functional websites.";
+
 export const metadata: Metadata = {
-  title: "Fardin Anam Aungon | Portfolio",
-  description:
-    "Fardin Anam Aungon is a Software Engineer II at Pridesys IT Ltd. He is a Full Stack Developer with a passion for building beautiful and functional websites.",
-  keywords: "Fardin Anam Aungon, Fardin, Anam, Aungon, Portfolio, Full Stack Developer, Software Engineer, Web Developer",
-  image: "/images/profile-pic.jpeg",
+  title: title,
+  description: description,
+  keywords:
+    "Fardin Anam Aungon, Fardin, Anam, Aungon, Portfolio, Full Stack Developer, Software Engineer, Web Developer",
+  metadataBase: new URL("https://fardinanam.vercel.app"),
+  openGraph: {
+    title: title,
+    description: description,
+    type: "website",
+    images: [
+      {
+        url: "/profile-pic.jpeg",
+        alt: "Fardin Anam Aungon's Profile Picture",
+      },
+    ],
+  },
 };
 
 export default function Home() {
