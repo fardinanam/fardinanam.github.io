@@ -11,7 +11,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Fardin Anam Aungon | Portfolio",
   description:
-    "Fardin Anam Aungon is just going to finish his CS degree and started a junior software engineering journey.",
+    "Fardin Anam Aungon is a Software Engineer II at Pridesys IT Ltd. He is a Full Stack Developer with a passion for building beautiful and functional websites.",
+  keywords: "Fardin Anam Aungon, Fardin, Anam, Aungon, Portfolio, Full Stack Developer, Software Engineer, Web Developer",
+  image: "/images/profile-pic.jpeg",
 };
 
 export default function Home() {
