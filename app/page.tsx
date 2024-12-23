@@ -17,16 +17,17 @@ export const metadata: Metadata = {
   keywords:
     "Fardin Anam Aungon, Fardin, Anam, Aungon, Portfolio, Full Stack Developer, Software Engineer, Web Developer",
   metadataBase: new URL("https://fardinanam.vercel.app"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
   openGraph: {
     title: title,
     description: description,
     type: "website",
-    images: [
-      {
-        url: "https://fardinanam.vercel.app/profile-pic.jpeg",
-        alt: "Fardin Anam Aungon's Profile Picture",
-      },
-    ],
+    images: '/profile-pic.jpeg',
   },
 };
 
