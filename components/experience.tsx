@@ -9,10 +9,11 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView, useTheme } from "@/lib/hooks";
-import { useInView } from "react-intersection-observer";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.3);
   const { theme } = useTheme();
 
   return (
@@ -47,20 +48,20 @@ export default function Experience() {
             >
               <h3 className='font-semibold capitalize'>{item.title}</h3>
               <p className='font-normal !mt-0'>{item.location}</p>
-              <p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
-                {item.description}
-              </p>
-              {
-                Object.keys(item.others).length > 0 && (
-                  <ul className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
-                    {Object.entries(item.others).map(([key, value]) => (
-                      <li key={key}>
-                        <span className='font-semibold'>{key}:</span> {value}
-                      </li>
-                    ))}
-                  </ul>
-                )
-              }
+              <div className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {item.description}
+                </ReactMarkdown>
+              </div>
+              {Object.keys(item.others).length > 0 && (
+                <ul className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>
+                  {Object.entries(item.others).map(([key, value]) => (
+                    <li key={key}>
+                      <span className='font-semibold'>{key}:</span> {value}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

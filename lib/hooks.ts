@@ -2,7 +2,7 @@ import { ActiveSectionContext } from "@/context/activeSectionContext";
 import { useContext, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { SectionName } from "./types";
-import ThemeContextProvider, { ThemeContext, ThemeContextType } from "@/context/theme-context";
+import { ThemeContext, ThemeContextType } from "@/context/theme-context";
 
 function useActiveSectionContext() {
   const context = useContext(ActiveSectionContext);

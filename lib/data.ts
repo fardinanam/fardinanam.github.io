@@ -22,16 +22,16 @@ export const links = [
     hash: "#about",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
     name: "Projects",
     hash: "#projects",
   },
   {
     name: "Skills",
     hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
   },
   {
     name: "Contact",
@@ -41,22 +41,44 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "MS in CS, RIT",
+    location: "Rochester, NY",
+    description:
+      "Pursuing my MS in Computer Science at Rochester Institute of Technology.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2025 - Present",
+    others: {},
+  },
+  {
     title: "Software Engineer II, Pridesys IT Ltd.",
     location: "Dhaka, Bangladesh",
-    description:
-      "Working as a software engineer II on a project to develop a cloud based ERP system.",
+    description: `
+Contributed to the development of a cloud-based enterprise resource planning (ERP) system — **BeeQube**.  
+We built its micro-service architecture from the ground up and I was a core decision-making member of the team.  
+
+Visit [beeqube.com](https://beeqube.com) to know more about the product.  
+
+**Responsibilities included:**
+
+- Designing and implementing backend APIs with unit tests using **Java Spring Boot**  
+- Developing interactive UIs with **ReactJS**, focusing on real-time features and user experience  
+- Database design and management with **PostgreSQL**  
+- Deploying microservices to **Azure Kubernetes Service (AKS)** with Docker & Helm  
+- Collaborating on UX research and implementation  
+- Participating in the full **SDLC**, from design to deployment  
+    `,
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - present",
-    others: {}
+    date: "2023 - 2025",
+    others: {},
   },
   {
     title: "Research Assistant, IWFM, BUET",
     location: "Dhaka, Bangladesh",
     description:
-      "I'm working as a research assistant on a project to develop a web-based early warning system for river erosion.",
+      "Worked as a research assistant on a project to develop a web-based early warning system for river erosion.",
     icon: React.createElement(MdAssistant),
     date: "2022-2024",
-    others: {}
+    others: {},
   },
   {
     title: "B.Sc. in CSE, BUET",
@@ -67,7 +89,7 @@ export const experiencesData = [
     date: "2019-2024",
     others: {
       CGPA: "3.92/4.00",
-    }
+    },
   },
   {
     title: "Intern, Pubali Bank Ltd.",
@@ -76,7 +98,7 @@ export const experiencesData = [
       "Participated in a 1 month internship program at Pubali Bank Ltd. and worked on a project to develop a module of their banking app.",
     icon: React.createElement(CgWorkAlt),
     date: "2023",
-    others: {}
+    others: {},
   },
 ] as const;
 
@@ -89,7 +111,7 @@ export const projectsData = [
     imageUrl: syncincImg,
     imageUrlDark: syncincImgDark,
     githubUrl: "https://github.com/fardinanam/SyncInc",
-    websiteUrl: "https://syncinc.vercel.app/",
+    // websiteUrl: "https://syncinc.vercel.app/",
   },
   {
     title: "Ray Tracing",

@@ -68,18 +68,17 @@ function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, I'm<span className='font-bold'> Fardin Anam Aungon.</span> I'm a
-        <span className='font-bold'> Software Engineer</span> at{" "}
+        Hello, I'm <span className='font-bold'> Fardin Anam Aungon.</span> I'm
+        pursuing my MS in Computer Science at
+        Rochester Institute of Technology. Previously, I worked as a
+        Software Engineer at{" "}
         <a
           href='https://pridesys.com/'
           className='underline italic'
           target='_blank'
         >
           Pridesys IT Ltd.
-        </a>{" "}
-        and I have just completed my B.Sc. in
-        <span className='font-bold'> Computer Science And Engineering </span>. 
-        I enjoy
+        </a>{" "}I enjoy
         <br />
         <TypeAnimation
           cursor
