@@ -111,7 +111,7 @@ export const projectsData = [
     imageUrl: syncincImg,
     imageUrlDark: syncincImgDark,
     githubUrl: "https://github.com/fardinanam/SyncInc",
-    // websiteUrl: "https://syncinc.vercel.app/",
+    websiteUrl: "",
   },
   {
     title: "Ray Tracing",
