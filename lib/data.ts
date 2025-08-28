@@ -60,12 +60,13 @@ Visit [beeqube.com](https://beeqube.com) to know more about the product.
 
 **Responsibilities included:**
 
-- Designing and implementing backend APIs with unit tests using **Java Spring Boot**  
-- Developing interactive UIs with **ReactJS**, focusing on real-time features and user experience  
-- Database design and management with **PostgreSQL**  
-- Deploying microservices to **Azure Kubernetes Service (AKS)** with Docker & Helm  
-- Collaborating on UX research and implementation  
-- Participating in the full **SDLC**, from design to deployment  
+- Collaborated with the team to research user experience best practices and implement them in the product
+- Implemented more than hundred backend APIs using Java Spring Boot and conducted unit tests using Junit and Mockito with more than 98% coverage
+- Developed an interactive UI with real-time features using ReactJS with TypeScript, Tailwind CSS, and Redux Toolkit
+- Managed the frontend from inception to reﬁning the user interface of the entire ERP system with a focus on dynamic content rendering and user experience
+- Designed 30% of the initial part of the database of the ERP with PostgreSQL while keeping the design open to any database
+- Deployed microservices to Azure Kubernetes Service with Docker containers and Helm charts
+- Created the website of the accounting app (you can visit the beta site [here](https://books.beeqube.com)
     `,
     icon: React.createElement(CgWorkAlt),
     date: "2023 - 2025",
@@ -74,8 +75,13 @@ Visit [beeqube.com](https://beeqube.com) to know more about the product.
   {
     title: "Research Assistant, IWFM, BUET",
     location: "Dhaka, Bangladesh",
-    description:
-      "Worked as a research assistant on a project to develop a web-based early warning system for river erosion.",
+    description: `
+Worked as a research assistant on a government project to develop a web-based early warning system for river erosion. Responsibilities included developing and maintaining the user interface using ReactJS and integrating it with the Google
+Maps API to visualize real-time data.
+- Developed and maintained the user interface using ReactJS, ensuring usability and responsiveness
+- Integrated Google Maps API to visualize real-time river erosion data from geolocation data
+- Collaborated with researchers to design a web-based early warning system deployed on Render. Prototype available [here](https://www.ews-re.com/). The site might be slow because the backend server is still under research and so it is hosted on Render with free plan
+`,
     icon: React.createElement(MdAssistant),
     date: "2022-2024",
     others: {},

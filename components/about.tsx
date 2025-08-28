@@ -20,7 +20,7 @@ function About() {
       <SectionHeading>About Me</SectionHeading>
       <p className='mb-3'>
         Graduate student in Computer Science at Rochester Institute of
-        Technology (RIT), with 2+ years of professional experience as a Software Engineer at
+        Technology (RIT), with 2.5+ years of professional experience as a Software Engineer at
         Pridesys IT Ltd. Skilled in fullstack software development with Python, Java, and
         JavaScript, and strong foundations in C, C++, and Data Structures &
         Algorithms. Earned a B.Sc. in Computer Science and Engineering from
