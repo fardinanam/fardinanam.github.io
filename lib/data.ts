@@ -50,7 +50,7 @@ export const experiencesData = [
     others: {},
   },
   {
-    title: "Software Engineer II, Pridesys IT Ltd.",
+    title: "Software Engineer, Pridesys IT Ltd.",
     location: "Dhaka, Bangladesh",
     description: `
 Contributed to the development of a cloud-based enterprise resource planning (ERP) system — **BeeQube**.  
